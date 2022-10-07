@@ -38,7 +38,7 @@ module.exports = {
         },
     },
     gasReporter: {
-        enabled: true,
+        enabled: false,
         outputFile: "gas-report.txt",
         noColors: true,
         currency: "USD",
@@ -47,5 +47,8 @@ module.exports = {
     },
     etherscan: {
         apiKey: ETHERSCAN_API_KEY,
+    },
+    mocha: {
+        timeout: 200000,
     },
 }
